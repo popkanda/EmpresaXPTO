@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RS.Prova.Data\RS.Prova.Data.csproj" />
+    <ProjectReference Include="..\RS.Prova.FileManager\RS.Prova.FileManager.csproj" />
+  </ItemGroup>
+
+</Project>

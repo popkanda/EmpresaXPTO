@@ -1,0 +1,33 @@
+﻿<h1>Upload de Arquivos</h1>
+
+<table>
+    <tr>
+        <form asp-controller="Upload" asp-action="UploadCliente" method="post" enctype="multipart/form-data">
+            <td>
+                <label for="file">Arquivo de Cliente (.txt):</label>
+
+            </td>
+            <td>
+                <input type="file" name="file" id="file" />
+            </td>
+            <td>
+                <input type="submit" />
+            </td>
+        </form>
+    </tr>
+    <tr> </tr>
+    <tr>
+        <form asp-controller="Upload" asp-action="UploadProduto" method="post" enctype="multipart/form-data">
+
+            <td>
+                <label for="file">Arquivo de Produtos (.txt):</label>
+            </td>
+            <td>
+                <input type="file" name="file" id="file" />
+            </td>
+            <td>
+                <input type="submit" />
+            </td>
+        </form>
+    </tr>
+</table>

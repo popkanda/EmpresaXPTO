@@ -1,0 +1,15 @@
+obj
+bin
+*.cache
+*.dll
+*.exe
+*.ide-shm
+*.exe
+*.ide-wal
+*.suo
+*.user
+_ReSharper.*/
+*.sdf
+*.opensdf
+*.tlog
+*.log

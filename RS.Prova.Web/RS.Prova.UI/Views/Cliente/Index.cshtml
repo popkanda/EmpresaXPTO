@@ -1,0 +1,38 @@
+﻿@model List<RS.Prova.Domain.Entities.Cliente>
+<h1>Lista de Clientes</h1>
+<div>
+
+    <table class="table table-hover table-striped">
+
+        <thead class="thead-dark">
+            <tr>
+                <th>Nome</th>
+                <th>Data de Fabricação</th>
+                <th>Sexo</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var cliente in Model)
+            {
+                <tr id="cliente-@cliente.Id">
+                    <td>@cliente.Nome @cliente.Sobrenome</td>
+                    <td>@cliente.DataNascimento.ToShortDateString()</td>
+                    <td>@cliente.Sexo</td>
+                    <td>@cliente.Email</td>
+                    <td>@(cliente.ClienteAtivo ? "Ativo" :  "Inativo" )</td>
+                    <td>
+                        <a class="btn btn-sm btn-success"
+                           asp-controller="PedidoItens" asp-action="Index"
+                           asp-route-id="@cliente.Id">Pedidos</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+</div>
